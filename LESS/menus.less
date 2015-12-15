@@ -1,0 +1,47 @@
+.page_fill {
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+}
+
+.navbar {
+    background-color: @navBarBackgroundColor;
+    margin: 0 auto 0 auto;
+    padding: 5px 0px 5px 15px;
+    li {
+        top: 0px;
+        color: @listTextColor;
+        background-color: @listBackgroundColor;
+        display: inline-block;
+        width: auto;
+        margin: 2px 8px 1px 5px;
+        font-size: @size-15-font;
+    }
+}
+
+.dropdown {
+    color: @listTextColor;
+    font-size: @size-15-font;
+    text-decoration: none;
+    &:hover + .sub-menu {
+        display: block;
+    }
+}
+
+.sub-menu {
+    width: 1000px;
+    margin: 0px auto;
+    display: none;
+    position: absolute;
+    li {
+        margin: 0px;
+        font-family: 'Ek Mukta';
+    }
+    a {
+        transition: all linear 0.15s;
+        color: #919191;
+    }
+    &:hover {
+        display: block;
+    }
+}

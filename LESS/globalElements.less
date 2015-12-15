@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: @globalTextColor;
+}
+
+p {
+    font-size: @size-15-font;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    margin: auto auto auto;
+    border: 2px solid @inputBorderColor;
+    padding: @pd-1;
+    border-radius: 5px;
+    background-color: @inputBackgroundColor;
+    [type="submit"] {
+        .borderRadiusSmall;
+        border: 0px;
+        font-size: @size-15-font;
+        margin-bottom: 3px;
+        padding: 5px 9px 5px 9px;
+        background-color: @buttonBackgroundColor;
+        color: @buttonTextColor;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+a.lern-btn {
+    text-decoration: none;
+}
